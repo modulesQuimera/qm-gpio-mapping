@@ -1,0 +1,25 @@
+{
+  "name": "gpio-mapping",
+  "version": "1.0.0",
+  "description": "mapping component of GPIO module - Node-Red",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/modulesQuimera/qm-hub-gpio-mapping.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/modulesQuimera/qm-hub-gpio-mapping/issues"
+  },
+  "homepage": "https://github.com/modulesQuimera/qm-hub-gpio-mapping#readme",
+  "node-red": {
+    "nodes": {
+      "gpio-mapping": "gpio-mapping.js"
+    }
+  }
+}
