@@ -2,13 +2,13 @@
 <style>
 
     .label-gpioA{
-        width: 33% !important;
+        width: 35% !important;
         margin-right: 15px !important;
         /* width: 22% !important; */
     }
 
     .label-gpioB{
-        width: 35% !important;
+        width: 38% !important;
         margin-right: 15px !important;
         /* width: 22% !important; */
     }
@@ -219,6 +219,10 @@
         },
         label: function() {
             return this.name||"";
-        }
+        },
+        oneditresize: function() {
+            console.log("oiiiiiiiiiiiiiiiii")
+            $("#red-ui-editor-config-scope").val($("#red-ui-editor-config-scope option:first").val());
+        },
     });
 </script>

@@ -1,6 +1,6 @@
 {
   "name": "qm-gpio-mapping",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "mapping component of GPIO module - Node-Red",
   "main": "index.js",
   "scripts": {
