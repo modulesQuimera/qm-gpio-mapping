@@ -76,11 +76,74 @@ module.exports = function(RED) {
         this.labelPort24 = config.labelPort24;
         this.valuePort24 = config.valuePort24;
 
-        // var node = this;
-        // node.on('input', function(msg) {
-        //     msg.payload = msg.payload.toLowerCase();
-        //     node.send(msg);
-        // });
+        
+        var globalContext = this.context().global;
+        var map = globalContext.get("map");
+
+        map.gpio[this.slot - 1][0].pinA =  "GPIO SLOT " + String(this.slot);
+        map.gpio[this.slot - 1][0].boardA =  "";
+        map.gpio[this.slot - 1][0].pinB = "";
+        map.gpio[this.slot - 1][0].boardB =  "";
+
+        map.gpio[this.slot - 1][1].pinA =  "GPA0 - PIN1";
+        map.gpio[this.slot - 1][1].boardA =  "TP" + String(this.labelPort1);
+        map.gpio[this.slot - 1][1].pinB = "GPB0 - PIN1";
+        map.gpio[this.slot - 1][1].boardB =  "TP" + String(this.labelPort13);
+
+        map.gpio[this.slot - 1][2].pinA =  "GPA1 - PIN2";
+        map.gpio[this.slot - 1][2].boardA =  "TP" + String(this.labelPort2);
+        map.gpio[this.slot - 1][2].pinB = "GPB1 - PIN2";
+        map.gpio[this.slot - 1][2].boardB =  "TP" + String(this.labelPort14);
+
+        map.gpio[this.slot - 1][3].pinA =  "GPA2 - PIN3";
+        map.gpio[this.slot - 1][3].boardA =  "TP" + String(this.labelPort3);
+        map.gpio[this.slot - 1][3].pinB = "GPB2 - PIN3";
+        map.gpio[this.slot - 1][3].boardB =  "TP" + String(this.labelPort15);
+
+        map.gpio[this.slot - 1][4].pinA =  "GPA3 - PIN4";
+        map.gpio[this.slot - 1][4].boardA =  "TP" + String(this.labelPort4);
+        map.gpio[this.slot - 1][4].pinB = "GPB3 - PIN4";
+        map.gpio[this.slot - 1][4].boardB =  "TP" + String(this.labelPort16);
+        map.gpio[this.slot - 1][5].pinA =  "GPA4 - PIN5";
+        map.gpio[this.slot - 1][5].boardA =  "TP" + String(this.labelPort5);
+        map.gpio[this.slot - 1][5].pinB = "GPB4 - PIN5";
+        map.gpio[this.slot - 1][5].boardB =  "TP" + String(this.labelPort17);
+
+        map.gpio[this.slot - 1][6].pinA =  "GPA5 - PIN6";
+        map.gpio[this.slot - 1][6].boardA =  "TP" + String(this.labelPort6);
+        map.gpio[this.slot - 1][6].pinB = "GPB5 - PIN6";
+        map.gpio[this.slot - 1][6].boardB =  "TP" + String(this.labelPort18);
+
+        map.gpio[this.slot - 1][7].pinA =  "GPA6 - PIN7";
+        map.gpio[this.slot - 1][7].boardA =  "TP" + String(this.labelPort7);
+        map.gpio[this.slot - 1][7].pinB = "GPB6 - PIN7";
+        map.gpio[this.slot - 1][7].boardB =  "TP" + String(this.labelPort19);
+
+        map.gpio[this.slot - 1][8].pinA =  "GPA7 - PIN8";
+        map.gpio[this.slot - 1][8].boardA =  "TP" + String(this.labelPort8);
+        map.gpio[this.slot - 1][8].pinB = "GPB7 - PIN8";
+        map.gpio[this.slot - 1][8].boardB =  "TP" + String(this.labelPort20);
+
+        map.gpio[this.slot - 1][9].pinA =  "GPA8 - PIN9";
+        map.gpio[this.slot - 1][9].boardA =  "TP" + String(this.labelPort9);
+        map.gpio[this.slot - 1][8].pinB = "GPB8 - PIN9";
+        map.gpio[this.slot - 1][8].boardB =  "TP" + String(this.labelPort21);
+
+        map.gpio[this.slot - 1][10].pinA =  "GPA9 - PIN10";
+        map.gpio[this.slot - 1][10].boardA =  "TP" + String(this.labelPort10);
+        map.gpio[this.slot - 1][10].pinB = "GPB9 - PIN10";
+        map.gpio[this.slot - 1][10].boardB =  "TP" + String(this.labelPort22);
+
+        map.gpio[this.slot - 1][11].pinA =  "GPA10 - PIN11";
+        map.gpio[this.slot - 1][11].boardA =  "TP" + String(this.labelPort11);
+        map.gpio[this.slot - 1][11].pinB = "GPB10 - PIN11";
+        map.gpio[this.slot - 1][11].boardB =  "TP" + String(this.labelPort23);
+
+        map.gpio[this.slot - 1][12].pinA =  "GPA11 - PIN12";
+        map.gpio[this.slot - 1][12].boardA =  "TP" + String(this.labelPort12);
+        map.gpio[this.slot - 1][12].pinB = "GPB11 - PIN12";
+        map.gpio[this.slot - 1][12].boardB =  "TP" + String(this.labelPort24);
+        globalContext.set("map", map);
     }
     RED.nodes.registerType("gpio-mapping", mappingGetValueNode);
 }
