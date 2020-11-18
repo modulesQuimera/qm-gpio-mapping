@@ -2,7 +2,7 @@
 <style>
 
     .label-gpioA{
-        width: 38% !important;
+        width: 40% !important;
         margin-right: 15px !important;
         /* width: 22% !important; */
     }
@@ -23,7 +23,7 @@
     }
 
     .input-respB{
-        width: 53% !important;
+        width: 54% !important;
         /* margin-left: 30px !important; */
     }
 
@@ -34,8 +34,9 @@
     }
 
     .divB {
-        width: 49% !important;
+        width: 44% !important;
         float: left !important;
+        margin-left: 2%;
     }
 </style>
 
@@ -53,13 +54,14 @@
     <hr class="hr-full">
 
      <h2>GPIO module mapping</h2>
+     <h3>Conector xx</h3>
 
     <div class="divA">
 
         <div class="form-row">
             <div style="float: left; text-align: center; margin-bottom: 28px; width: max-content;">
                 <span>
-                    Jig conector's pins
+                    Jig interface
                 </span>
             </div>
             <div style="text-align: center;">
@@ -71,51 +73,51 @@
             <input type="text"  id="node-config-input-labelPort1" class="input-respA"> -->
         </div>
         <div class="form-row">
-            <label class="label-gpioA"><i class="fa fa-microchip"></i> GPA0 - PIN1 </label> 
+            <label class="label-gpioA"><i class="fa fa-microchip"></i> GPA0 - Pin - 1 </label> 
             <input type="text"  id="node-config-input-labelPort1" class="input-respA">
         </div>
         <div class="form-row">
-            <label class="label-gpioA"><i class="fa fa-microchip"></i> GPA1 - PIN2 </label>
+            <label class="label-gpioA"><i class="fa fa-microchip"></i> GPA1 - Pin - 2 </label>
             <input type="text"  id="node-config-input-labelPort2" class="input-respA">
         </div>
         <div class="form-row">
-            <label class="label-gpioA"><i class="fa fa-microchip"></i> GPA2 - PIN3 </label>
+            <label class="label-gpioA"><i class="fa fa-microchip"></i> GPA2 - Pin - 3 </label>
             <input type="text"  id="node-config-input-labelPort3" class="input-respA">
         </div>
         <div class="form-row">
-            <label class="label-gpioA"><i class="fa fa-microchip"></i> GPA3 - PIN4 </label>
+            <label class="label-gpioA"><i class="fa fa-microchip"></i> GPA3 - Pin - 4 </label>
             <input type="text"  id="node-config-input-labelPort4" class="input-respA">
         </div>
         <div class="form-row">
-            <label class="label-gpioA"><i class="fa fa-microchip"></i> GPA4 - PIN5 </label>
+            <label class="label-gpioA"><i class="fa fa-microchip"></i> GPA4 - Pin - 5 </label>
             <input type="text"  id="node-config-input-labelPort5" class="input-respA">
         </div>
         <div class="form-row">
-            <label class="label-gpioA"><i class="fa fa-microchip"></i> GPA5 - PIN6 </label>
+            <label class="label-gpioA"><i class="fa fa-microchip"></i> GPA5 - Pin - 6 </label>
             <input type="text"  id="node-config-input-labelPort6" class="input-respA">
         </div>
         <div class="form-row">
-            <label class="label-gpioA"><i class="fa fa-microchip"></i> GPA6 - PIN7 </label>
+            <label class="label-gpioA"><i class="fa fa-microchip"></i> GPA6 - Pin - 7 </label>
             <input type="text"  id="node-config-input-labelPort7" class="input-respA">
         </div>
         <div class="form-row">
-            <label class="label-gpioA"><i class="fa fa-microchip"></i> GPA7 - PIN8 </label>
+            <label class="label-gpioA"><i class="fa fa-microchip"></i> GPA7 - Pin - 8 </label>
             <input type="text"  id="node-config-input-labelPort8" class="input-respA">
         </div>
         <div class="form-row">
-            <label class="label-gpioA"><i class="fa fa-microchip"></i> GPA8 - PIN9 </label>
+            <label class="label-gpioA"><i class="fa fa-microchip"></i> GPA8 - Pin - 9 </label>
             <input type="text"  id="node-config-input-labelPort9" class="input-respA">
         </div>
         <div class="form-row">
-            <label class="label-gpioA"><i class="fa fa-microchip"></i> GPA9 - PIN10 </label>
+            <label class="label-gpioA"><i class="fa fa-microchip"></i> GPA9 - Pin - 10 </label>
             <input type="text"  id="node-config-input-labelPort10" class="input-respA">
         </div>
         <div class="form-row">
-            <label class="label-gpioA"><i class="fa fa-microchip"></i> GPA10 - PIN11 </label>
+            <label class="label-gpioA"><i class="fa fa-microchip"></i> GPA10 - Pin - 11 </label>
             <input type="text"  id="node-config-input-labelPort11" class="input-respA">
         </div>
         <div class="form-row">
-            <label class="label-gpioA"><i class="fa fa-microchip"></i> GPA11 - PIN12 </label>
+            <label class="label-gpioA"><i class="fa fa-microchip"></i> GPA11 - Pin - 12 </label>
             <input type="text"  id="node-config-input-labelPort12" class="input-respA">
         </div>
     </div>
@@ -125,7 +127,7 @@
         <div class="form-row">
             <div style="float: left; text-align: center; margin-bottom: 28px; width: max-content;">
                 <span>
-                    Jig conector's pins
+                    Jig interface
                 </span>
             </div>
             <div style="text-align: center;">
@@ -133,56 +135,54 @@
                     Board Interface <br> (TP or Connector)
                 </span>
             </div>
-            <!-- <label class="label-gpioA"><i class="fa fa-microchip"></i> GPA0 - PIN </label> 
-            <input type="text"  id="node-config-input-labelPort1" class="input-respA"> -->
         </div>
         <div class="form-row">
-            <label class="label-gpioB"><i class="fa fa-microchip"></i> GPB0 - PIN1 </label> 
+            <label class="label-gpioB"><i class="fa fa-microchip"></i> GPB0</label> 
             <input type="text" id="node-config-input-labelPort13" class="input-respB">
         </div>
         <div class="form-row">
-            <label class="label-gpioB"><i class="fa fa-microchip"></i> GPB1 - PIN2 </label>
+            <label class="label-gpioB"><i class="fa fa-microchip"></i> GPB1</label>
             <input type="text" id="node-config-input-labelPort14" class="input-respB">
         </div>
         <div class="form-row">
-            <label class="label-gpioB"><i class="fa fa-microchip"></i> GPB2 - PIN3 </label>
+            <label class="label-gpioB"><i class="fa fa-microchip"></i> GPB2</label>
             <input type="text" id="node-config-input-labelPort15" class="input-respB">
         </div>
         <div class="form-row">
-            <label class="label-gpioB"><i class="fa fa-microchip"></i> GPB3 - PIN4 </label>
+            <label class="label-gpioB"><i class="fa fa-microchip"></i> GPB3</label>
             <input type="text" id="node-config-input-labelPort16" class="input-respB">
         </div>
         <div class="form-row">
-            <label class="label-gpioB"><i class="fa fa-microchip"></i> GPB4 - PIN5 </label>
+            <label class="label-gpioB"><i class="fa fa-microchip"></i> GPB4</label>
             <input type="text" id="node-config-input-labelPort17" class="input-respB">
         </div>
         <div class="form-row">
-            <label class="label-gpioB"><i class="fa fa-microchip"></i> GPB5 - PIN6 </label>
+            <label class="label-gpioB"><i class="fa fa-microchip"></i> GPB5 </label>
             <input type="text" id="node-config-input-labelPort18" class="input-respB">
         </div>
         <div class="form-row">
-            <label class="label-gpioB"><i class="fa fa-microchip"></i> GPB6 - PIN7 </label>
+            <label class="label-gpioB"><i class="fa fa-microchip"></i> GPB6</label>
             <input type="text" id="node-config-input-labelPort19" class="input-respB">
         </div>
         <div class="form-row">
-            <label class="label-gpioB"><i class="fa fa-microchip"></i> GPB7 - PIN8 </label>
+            <label class="label-gpioB"><i class="fa fa-microchip"></i> GPB7</label>
             <input type="text" id="node-config-input-labelPort20" class="input-respB">
         </div>
         <div class="form-row">
-            <label class="label-gpioB"><i class="fa fa-microchip"></i> GPB8 - PIN9 </label>
+            <label class="label-gpioB"><i class="fa fa-microchip"></i> GPB8</label>
             <input type="text" id="node-config-input-labelPort21" class="input-respB">
         </div>
         <div class="form-row">
-            <label class="label-gpioB"><i class="fa fa-microchip"></i> GPB9 - PIN10 </label>
+            <label class="label-gpioB"><i class="fa fa-microchip"></i> GPB9 </label>
             <input type="text" id="node-config-input-labelPort22" class="input-respB">
         </div>
         <div class="form-row">
-            <label class="label-gpioB"><i class="fa fa-microchip"></i> GPB10 - PIN11 </label>
+            <label class="label-gpioB"><i class="fa fa-microchip"></i> GPB10</label>
             <input type="text" id="node-config-input-labelPort23" class="input-respB">
         </div>
 
         <div class="form-row">
-            <label class="label-gpioB"><i class="fa fa-microchip"></i> GPB11 - PIN12 </label>
+            <label class="label-gpioB"><i class="fa fa-microchip"></i> GPB11</label>
             <input type="text" id="node-config-input-labelPort24" class="input-respB">
         </div>
     </div>
